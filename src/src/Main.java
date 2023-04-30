@@ -19,6 +19,12 @@ public class Main {
             } else if (t == '/') {
                 System.out.println("Division is selected");
             }
+            else if (t == '^') {
+                System.out.println("Power is selected");
+            }
+            else if (t == '%') {
+                System.out.println("Percentage is selected");
+            }
             else if (t == '0') {
                 System.out.println("Exit");
                 break;
@@ -53,7 +59,14 @@ public class Main {
                     int div = a / b;
                     System.out.println(a + "/" + b + "=" + div);
                     break;
-
+                case '^':
+                    double pow = Math.pow(a,b);
+                    System.out.println(a + "^" + b + "=" + pow);
+                    break;
+                case '%':
+                   float per = (float)(a*(100.0/b));
+                    System.out.println(a + "%" + b + "=" + per);
+                    break;
                 default:
                     System.out.println("Wrong");
             }
