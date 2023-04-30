@@ -5,6 +5,7 @@ public class Main {
         Scanner sc=new Scanner(System.in);
         char t;
 
+
             while(true){
                 System.out.println("Select Operation");
                  t = sc.next().charAt(0);
